@@ -1,13 +1,10 @@
-package com.guoru.thread;
+package lock;
 
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-/**
- * Created by Guoru on 2019/3/22.
- */
 public class PrintABCUsingLock {
-    private int times;
+	private int times;
     private int state;
     private Lock lock = new ReentrantLock();
 
