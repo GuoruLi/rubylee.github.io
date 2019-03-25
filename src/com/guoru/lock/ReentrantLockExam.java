@@ -30,6 +30,8 @@ public class ReentrantLockExam {
     private void testLock(){
     	try{
     		lock.lock();
+    		lock.tryLock();
+    		lock.lockInterruptibly();
     		System.out.println(Thread.currentThread().getName() + "获得锁");
     	}finally{
     		lock.unlock();
